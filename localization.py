@@ -73,10 +73,7 @@ import matplotlib.patches as patches
 import matplotlib.pyplot as plt
 import cca2
 
-# on the image I'm using, the headlamps were categorized as a license plate
-# because their shapes were similar
-# for now I'll just use the plate_like_objects[2] since I know that's the
-# license plate. We'll fix this later
+# on the image I'm using, the headlamps were categorized as a license plate because their shapes were similar for now I'll just use the plate_like_objects[2] since I know that's the license plate. We'll fix this later
 
 # The invert was done so as to convert the black pixel to white pixel and vice versa
 license_plate = np.invert(cca2.plate_like_objects[2])
